@@ -60,6 +60,7 @@ function watchTask() {
   watch('./src/*.html', series(htmlTask, browsersyncReload))
   watch('./src/css/*.css', series(cssTask, browsersyncReload));
   watch('./src/scripts/**/*.js', series(jsTask, browsersyncReload));
+  watch('./src/assets/*', series(assetsTask, browsersyncReload));
 } 
 
 // Default Gulp Task
